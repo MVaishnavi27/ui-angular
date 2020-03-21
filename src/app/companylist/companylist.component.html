@@ -1,0 +1,42 @@
+<app-adminnavbar></app-adminnavbar><div class="bg">
+    <div class="panel panel-default">
+    
+        <div class="panel-body">
+      
+          <table class="table table-hover table-sm" >
+      
+            <thead class="thead-light">
+      
+              <tr>
+                <th>Companyname</th>
+                <th>Turnover</th>
+                
+                <th>Ceo</th>
+      
+                <th>Listedinse</th>
+                
+              </tr>
+      
+            </thead>
+      
+            <tbody>
+      
+               <tr *ngFor="let companydata of companyList ">
+                <td>{{companydata.companyname}}</td>
+      
+                <td>{{companydata.turnover}}</td>
+               
+                <td>{{companydata.ceoname}}</td>
+      
+                <td>{{companydata.listedinse}}</td>
+                <button (click)="deleteCompanyData(companydata)" class='btn btn-success'>Delete</button>&nbsp;
+    
+              <button (click)="updateCompanyData(companydata)" class='btn btn-primary'>Update</button>
+               
+              </tr>   
+        </tbody><br>  
+    </table>  
+    </div>  
+    </div> 
+    </div>  
+    

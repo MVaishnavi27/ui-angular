@@ -1,0 +1,68 @@
+<div class="bg-img">
+    <div class="row"></div>
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div [hidden]="submitted" style="width: 400px;">
+        <h2>Add Exchange</h2>
+        <br>
+        <form [formGroup]="stockexsaveform" #saveStockex1 (ngSubmit)="saveStockex(saveStockex1)">
+          <div class="form-group">
+            <label for="Stockexid"><b>Stockexchange id</b></label>
+            <input type="number" class="form-control" formControlName="stockexid" data-toggle="tooltip"
+              data-placement="right" title="Enter Student Name">
+            <div class="alert alert-danger" *ngIf="(Stockexid.touched) && (Stockexid.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Stockexid.errors.required">Required</span>
+
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="stock exchange"><b>Stock exchange</b></label>
+            <input type="text" class="form-control" formControlName="stockexchange" data-toggle="tooltip"
+              data-placement="right" title="Enter Company Name">
+            <div class="alert alert-danger" *ngIf="(Stockexchange.touched) && (Stockexchange.invalid)" style="margin-top: 5px;">
+              <!--<span *ngIf="Stockexchange.errors.required">Required</span>-->
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="text"><b>Brief</b></label>
+            <br>
+            <input type="text" class="form-control" formControlName="brief" data-toggle="tooltip"
+              data-placement="right" title="Enter stockexchange">
+            <div class="alert alert-danger" *ngIf="(Brief.touched) && (Brief.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Brief.errors.required">Required</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Contact Address"><b>Enter contact <address></address></b></label>
+            <br>
+            <input type="number" class="form-control" formControlName="contactaddress" data-toggle="tooltip"
+              data-placement="right" title="Enter  pricepershare">
+            <div class="alert alert-danger" *ngIf="(Contactaddress.touched) && (Contactaddress.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Contactaddress.errors.required"> User is Required</span>
+  
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Remarks"><b>Enter remarks</b></label>
+            <br>
+            <input type="text" class="form-control" formControlName="remarks" data-toggle="tooltip"
+              data-placement="right" title="Enter  Email">
+            <div class="alert alert-danger" *ngIf="(Remarks.touched) && (Remarks.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Remarks.errors.required">Required</span>
+            </div>
+          </div>
+          <br>
+  
+          <br>
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+          <div [hidden]="!submitted">
+            <h4> Added SuccessFully!</h4>
+            <button (click)="stockexsaveform()"></button>
+        
+  </div>
+  </div>
+  </div>
+
+

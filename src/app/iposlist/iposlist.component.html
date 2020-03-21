@@ -1,0 +1,30 @@
+<app-usernavbar></app-usernavbar>
+<table class="table table-hover table-sm">
+    <thead>
+        <tr>
+            <th>Ipoid</th>
+            <th>Companyname</th>
+            <th>Stockexchange</th>
+            <th>Pricepershare</th>
+            <th>Totalnoofshares</th>
+            <th>Opendatetime</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ipos of iposlist ">
+            <td>{{ipos.ipoid}}</td>
+            <td>{{ipos.companyname}}</td>
+            <td>{{ipos.stockexchange}}</td>
+
+            <td>{{ipos.pricepershare}}</td>
+            <td>{{ipos.totalnoofshares}}</td>
+            <td>{{ipos.opendatetime}}</td>
+
+            <button (click)="deleteIpos(ipos)" class='btn btn-success'>Delete</button>&nbsp;
+
+            <button (click)="updateIpos(ipos)" class='btn btn-primary'>Update</button>
+
+        </tr>
+    </tbody><br>
+</table>

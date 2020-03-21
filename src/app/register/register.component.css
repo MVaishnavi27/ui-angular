@@ -1,0 +1,97 @@
+body, html {
+  height: 100%;
+}
+
+ 
+* {
+  box-sizing: border-box;
+
+}
+
+.overlay {
+  position: absolute;
+  min-height:630px;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.navbar.navbar-inverse{
+
+
+
+  margin:0;
+ 
+ 
+ 
+ }
+.bg-img {
+  background-image: url("https://images.unsplash.com/photo-1528238646472-f2366160b6c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+  min-height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 0mm;
+}
+
+.container {
+  right: 100;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+ 
+ 
+}
+  input[type=text], input[type=password] {
+    text-decoration-color: transparent;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: rgb(243, 243, 243);
+  background: #f1f1f1;
+  opacity: 0.7;
+}
+input[type=tel] {
+  text-decoration-color: transparent;
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: rgb(243, 243, 243);
+background: #f1f1f1;
+opacity: 0.7;
+}
+input[type=email]{
+  text-decoration-color: transparent;
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: rgb(243, 243, 243);
+background: #f1f1f1;
+opacity: 0.7;
+}
+h2{
+  color:white;
+  text-align: center;
+}
+label{
+  color:whitesmoke;
+}
+input[type=text]:focus, input[type=password]:focus {
+  text-decoration-color: transparent;
+  background-color: #ddd;
+  outline: none;
+}
+.btn {
+  background-color:rgb(91, 192, 222);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+
+.btn:hover {
+  opacity: 1;
+}

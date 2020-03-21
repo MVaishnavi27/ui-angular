@@ -1,0 +1,109 @@
+<app-adminnavbar></app-adminnavbar><div class="bg-img">
+    <div class="row"></div>
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div [hidden]="submitted" style="width: 400px;">
+        <h2>Add Company Data</h2>
+        <br>
+        <form [formGroup]="companysaveform" #saveCompanydata1 (ngSubmit)="saveCompanydata(saveCompanydata1)">
+          <div class="form-group">
+            <label for="Companyname"><b>Company Name</b></label>
+            <input type="text" class="form-control" formControlName="companyname" data-toggle="tooltip"
+              data-placement="right" title="Enter Student Name">
+            <div class="alert alert-danger" *ngIf="(Companyname.touched) && (Companyname.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Companyname.errors.required">Company Name is Required</span>
+              <span *ngIf="Companyname.errors.minlength">
+                MinLength Error
+              </span>
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="Turnover"><b>Turnover</b></label>
+            <input type="number" class="form-control" formControlName="turnover" data-toggle="tooltip"
+              data-placement="right" title="Enter Turnover">
+            <div class="alert alert-danger" *ngIf="(Turnover.touched) && (Turnover.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Turnover.errors.required">Student Name is Required</span>
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="text"><b>Enter CEO</b></label>
+            <br>
+            <input type="text" class="form-control" formControlName="ceoname" data-toggle="tooltip"
+              data-placement="right" title="Enter CEO Name">
+            <div class="alert alert-danger" *ngIf="(Ceoname.touched) && (Ceoname.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Ceoname.errors.required">Student Email is Required</span>
+              <span *ngIf="Ceoname.errors.minlength">
+                Invalid Name
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="BOD"><b>Enter BOD</b></label>
+            <br>
+            <input type="text" class="form-control" formControlName="bod" data-toggle="tooltip"
+              data-placement="right" title="Enter  bod">
+            <div class="alert alert-danger" *ngIf="(Bod.touched) && (Bod.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Bod.errors.required"> User is Required</span>
+  
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="listed in se"><b>Enter LSE</b></label>
+            <br>
+            <input type="number" class="form-control" formControlName="listedinse" data-toggle="tooltip"
+              data-placement="right" title="Enter  Email">
+            <div class="alert alert-danger" *ngIf="(Listedinse.touched) && (Listedinse.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Listedinse.errors.required">Required</span>
+            </div>
+          </div>
+          <br>
+  
+  
+          <br>
+          <div class="form-group">
+            <label for="sector"><b>Enter sector</b></label>
+            <br>
+            <input type="text" class="form-control" formControlName="sector" data-toggle="tooltip" data-placement="right"
+              title="Enter Student Email">
+            <div class="alert alert-danger" *ngIf="(Sector.touched) && (Sector.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Sector.errors.required">Student Email is Required</span>
+  
+  
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="remarks"><b>Enter remarks</b></label>
+            <br>
+            <input type="text" class="form-control" formControlName="remarks" data-toggle="tooltip" data-placement="right"
+              title="Enter remarks">
+            <div class="alert alert-danger" *ngIf="(Remarks.touched) && (Remarks.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Remarks.errors.required">Required</span>
+  
+  
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="stock code"><b>Enter stock code</b></label>
+            <br>
+            <input type="number" class="form-control" formControlName="stockcode" data-toggle="tooltip" data-placement="right"
+              title="Enter stock code">
+            <div class="alert alert-danger" *ngIf="(Stockcode.touched) && (Stockcode.invalid)" style="margin-top: 5px;">
+              <span *ngIf="Stockcode.errors.required">Required</span>
+  
+  
+            </div>
+          </div>
+  
+          <br>
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+          <div [hidden]="!submitted">
+            <h4> Added SuccessFully!</h4>
+            <button (click)="companysaveform()"></button>
+        
+  </div>
+  </div>
+  </div>

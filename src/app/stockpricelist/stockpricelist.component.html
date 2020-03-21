@@ -1,0 +1,43 @@
+
+<div class="bg">
+    <div class="panel panel-default">
+    
+        <div class="panel-body">
+      
+          <table class="table table-hover table-sm" >
+      
+            <thead class="thead-light">
+      
+              <tr>
+                <th>Companyname</th>
+                <th>Stockexchange</th>
+                
+                <th>Date</th>
+      
+                <th>Time</th>
+                
+              </tr>
+      
+            </thead>
+      
+            <tbody>
+      
+               <tr *ngFor="let stockprice of stockpriceList ">
+                <td>{{stockprice.companyname}}</td>
+      
+                <td>{{stockprice.stockexchange}}</td>
+               
+                <td>{{stockprice.date}}</td>
+      
+                <td>{{stockprice.time}}</td>
+                <button (click)="deleteStockPrice(stockprice)" class='btn btn-success'>Delete</button>&nbsp;
+    
+              <button (click)="updateStockPrice(stockprice)" class='btn btn-primary'>Update</button>
+               
+              </tr>   
+        </tbody><br>  
+    </table>  
+    </div>  
+    </div> 
+    </div>  
+    

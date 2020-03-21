@@ -1,0 +1,190 @@
+body {
+
+    
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://media.istockphoto.com/photos/technical-financial-graph-on-technology-abstract-background-picture-id639666654?k=6&m=639666654&s=612x612&w=0&h=r9w9uwWP5A95iJ-fA4FwBeQ2VpGc1BUds4PSgePgm_s=");
+      
+        /* Control the height of the image */
+        min-height: 700px;
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+   
+    .form-control {
+   
+    min-height: 41px;
+   
+    box-shadow: none;
+   
+    border-color: #e1e4e5;
+   
+    }
+   
+    .form-control:focus {
+   
+    border-color: #49c1a2;
+   
+    }
+   
+    .form-control, .btn {
+   
+       border-radius: 3px;
+   
+     }
+   
+    .login-form {
+   
+    width: 400px;
+   
+    margin: 0 auto;
+
+    padding: 100px 0;
+   
+    }
+   
+    .login-form form {
+   
+    color: #2ac41c;
+   
+    border-radius: 3px;
+   
+      margin-bottom: 15px;
+   
+       background: #fff;
+   
+       box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+   
+       padding: 30px;
+   
+     }
+   
+    .login-form h2 {
+   
+    color: #333;
+   
+    font-weight: bold;
+   
+       margin-top: 0;
+   
+     }
+   
+     .login-form hr {
+   
+       margin: 0 -30px 20px;
+   
+     }
+   
+    .login-form .form-group {
+   
+    margin-bottom: 20px;
+   
+    }
+   
+    .login-form label {
+   
+    font-weight: normal;
+   
+    font-size: 13px;
+   
+    }
+   
+    .login-form .btn {
+   
+       font-size: 16px;
+   
+       font-weight: bold;
+   
+    background: #49c1a2;
+   
+    border: none;
+   
+    min-width: 140px;
+   
+     }
+   
+    .login-form .btn:hover, .login-form .btn:focus {
+   
+    background: #3cb094;
+   
+       outline: none !important;
+   
+    }
+   
+    .login-form a {
+   
+    color: rgb(110, 76, 76);
+   
+    text-decoration: underline;
+   
+    }
+   
+    .login-form a:hover {
+   
+    text-decoration: none;}
+    body, html {
+      height: 100%;
+    }
+    
+     
+    * {
+      box-sizing: border-box;
+    
+    }
+    
+    .bg-img {
+      background-image: url("https://media.istockphoto.com/photos/technical-financial-graph-on-technology-abstract-background-picture-id639666654?k=6&m=639666654&s=612x612&w=0&h=r9w9uwWP5A95iJ-fA4FwBeQ2VpGc1BUds4PSgePgm_s=");
+      min-height: 700px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .container {
+      right: 100;
+      margin: 20px;
+      max-width: 300px;
+      padding: 16px;
+      opacity: 0.1;
+     
+     
+    }
+      input[type=text], input[type=password] {
+        text-decoration-color: transparent;
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: rgb(243, 243, 243);
+      background: #f1f1f1;
+      opacity: 0.7;
+    }
+    h2{
+      color:rgb(238, 96, 14);
+      text-align: center;
+    }
+    label{
+      color:whitesmoke;
+    }
+    input[type=text]:focus, input[type=password]:focus {
+      text-decoration-color: transparent;
+      background-color: #ddd;
+      outline: none;
+    }
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 1;
+    }
+    
+    .btn:hover {
+      opacity: 1;
+    }
+    

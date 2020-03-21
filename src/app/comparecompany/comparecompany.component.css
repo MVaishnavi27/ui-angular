@@ -1,0 +1,12 @@
+select{
+    width: 150px;
+    margin: 30px;
+}
+label{
+    width: 150px;
+    margin: 30px;
+}
+button{
+    text-align: center;
+}
+

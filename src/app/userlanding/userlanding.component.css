@@ -1,0 +1,27 @@
+/*body {
+
+    
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://media.istockphoto.com/photos/technical-financial-graph-on-technology-abstract-background-picture-id639666654?k=6&m=639666654&s=612x612&w=0&h=r9w9uwWP5A95iJ-fA4FwBeQ2VpGc1BUds4PSgePgm_s=");*/
+      
+        /* Control the height of the image */
+       /* height: 500px;
+      
+        /* Center and scale the image nicely */
+       /* background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }*/
+
+    .bg{
+        background-image: url("https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 700px;
+    }
+    .h2{color: ivory;}
+    .title{
+        color: cornsilk;
+    }

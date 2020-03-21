@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+  }
+  
+   
+  * {
+    box-sizing: border-box;
+  
+  }
+  
+  .bg-img {
+    background-image: url("https://media.istockphoto.com/photos/technical-financial-graph-on-technology-abstract-background-picture-id639666654?k=6&m=639666654&s=612x612&w=0&h=r9w9uwWP5A95iJ-fA4FwBeQ2VpGc1BUds4PSgePgm_s=");
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .container {
+    right: 100;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+   
+   
+  }
+    input[type=text], input[type=password] {
+      text-decoration-color: transparent;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: rgb(243, 243, 243);
+    background: #f1f1f1;
+    opacity: 0.7;
+  }
+  h2{
+    color:rgb(238, 96, 14);
+    text-align: center;
+  }
+  label{
+    color:whitesmoke;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+    text-decoration-color: transparent;
+    background-color: #ddd;
+    outline: none;
+  }
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
